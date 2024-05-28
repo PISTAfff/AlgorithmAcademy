@@ -1,0 +1,68 @@
+.verify-container {
+  height: 500px;
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 10px 10px;
+}
+.verify-image-container {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../public/images/Lock.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+  background-repeat: no-repeat;
+}
+
+.verify-subcontainer > header {
+  height: 35%;
+}
+.verify-subcontainer {
+  width: fit-content;
+  height: 100%;
+  width: 70%;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subcontainer {
+  height: 30%;
+  min-height: 30%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.change-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.25s;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(161, 161, 161);
+  margin-top: 25px;
+}
+.change-link:hover {
+  color: black;
+  transition: 0.25s;
+}
+.subcontainer > .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+}

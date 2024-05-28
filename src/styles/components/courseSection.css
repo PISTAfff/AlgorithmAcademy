@@ -1,0 +1,39 @@
+.course-section-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  height: fit-content;
+  padding: 50px 0px;
+  font-family: "Bree Serif", serif;
+}
+.course-section-main-container > header {
+  width: 100%;
+  margin: 50px;
+  padding: 30px 0;
+  position: relative;
+  top: -50px;
+  height: 10%;
+}
+.course-section-sub-container {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  height: 90%;
+  width: 100%;
+}
+.course-section-main-container > hr {
+  width: 75%;
+  position: relative;
+  top: -75px;
+}
+
+@media only screen and (max-width: 475px) {
+  .course-section-sub-container {
+    gap: 0px;
+    height: fit-content;
+  }
+}

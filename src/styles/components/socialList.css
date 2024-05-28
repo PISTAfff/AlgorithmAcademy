@@ -1,0 +1,41 @@
+.social {
+  width: 75%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 50px;
+  list-style-type: none;
+}
+.icon {
+  transition: 1s;
+  opacity: 0.75;
+  width: 12.5px;
+  height: 12.5px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.icon:hover {
+  transition: 0.25s;
+  opacity: 0.5;
+}
+.icon.youtube {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 750px) {
+  .icon {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .social {
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -5%;
+  }
+}

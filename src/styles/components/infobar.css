@@ -1,0 +1,54 @@
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  font-family: "Bree Serif", serif;
+  font-style: normal;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  color: #353535;
+}
+.phone,
+.email {
+  min-width: 150px;
+  transition: 0.5s;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+  color: #353535;
+}
+
+.phone-icon,
+.email-icon {
+  width: 12.5px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.phone-area,
+.email-area {
+  padding-left: 5px;
+  font-size: 12px;
+}
+.phone:hover,
+.email:hover {
+  transition: 0.25s;
+  opacity: 0.5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+@media only screen and (max-width: 750px) {
+  .info-bar {
+    flex-direction: column;
+  }
+  .phone,
+  .email {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.textfield-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: rgb(161, 161, 161);
+}
+
+.textfield-label {
+  width: 95%;
+  height: 5px;
+  align-self: flex-start;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+
+}
+input {
+  border-radius: 5px;
+  width: 100%;
+  height: 25px;
+  border: 0.5px solid rgb(161, 161, 161);
+  font-family: monospace;
+}
+.textfield-container:focus-within > .textfield-label {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.25s;
+}
+.textfield-container > .textfield-label {
+  pointer-events: none;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transition: 0.25s;
+  position: relative;
+  top: 32.5px;
+  left: 15px;
+  padding: 0 10px;
+}
+.textfield-input:focus-within {
+  outline: none;
+  transition: 0.25s;
+}
+.textfield-label.written {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.25s;
+}
+.approve {
+  border: 0.75px solid rgb(90, 155, 84);
+}
+.pass {
+  border: 0.75px solid rgb(229, 186, 101);
+}
+.decline {
+  border: 0.75px solid rgb(165, 62, 62);
+}

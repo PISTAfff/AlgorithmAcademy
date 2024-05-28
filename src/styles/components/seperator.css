@@ -1,0 +1,35 @@
+.seperator-container {
+  height: 5px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-seperator {
+  margin-left: 50px;
+  width: 45%;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.568),
+    rgba(0, 0, 0, 0.568)
+  );
+  border: none;
+}
+
+.right-seperator {
+  margin-right: 50px;
+
+  width: 45%;
+  height: 2px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.568),
+    rgba(0, 0, 0, 0.568)
+  );
+  border: none;
+}

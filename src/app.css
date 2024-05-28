@@ -1,0 +1,89 @@
+* {
+  user-select: none;
+}
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 75px;
+  width: 100%;
+}
+.Navbar {
+  width: 100%;
+  position: fixed;
+  top: 5px;
+  z-index: 6;
+}
+.limit-datax {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.limit-datay {
+  min-height: 75px;
+  max-height: 75px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.PageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: transparent;
+  font-family: "Bree Serif", serif;
+}
+.info {
+  width: 95%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  border-radius: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.space {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space.big {
+  padding: 30px;
+}
+.space.big.top {
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 25px;
+  }
+}

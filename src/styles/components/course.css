@@ -1,0 +1,110 @@
+.course-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 1rem;
+  transition: 0.25s ease-in-out;
+  background-color: #cacaca;
+  min-width: 300px;
+  min-height: 400px;
+  font-family: "Bree Serif", serif;
+  scale: 1;
+}
+.course-container:hover {
+  position: relative;
+  transform: translateY(-15px);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.course-info {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.course-link {
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 20px;
+}
+.course-image {
+  border-radius: 5px 5px 0 0;
+  height: 40%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.course-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+.course-name {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.course-description {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 15px;
+  width: 90%;
+  max-width: 300px;
+  height: 50%;
+}
+
+.course-presenter::before {
+  content: "Presented By : ";
+  font-weight: bolder;
+  font-size: 15px;
+}
+.course-presenter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 15px;
+  width: 100%;
+  width: 85%;
+  height: 10%;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.course-seperator {
+  width: 50%;
+}
+.course-price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 85%;
+  height: 10%;
+  font-weight: bolder;
+  font-size: 15px;
+}
+@media only screen and (max-width: 475px) {
+  .course-container {
+    scale: 0.8;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .course-container {
+    scale: 0.7;
+  }
+}
